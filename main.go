@@ -1,12 +1,11 @@
 package main
 
 import (
-	"example.com/m/add"
 	"fmt"
+	"github.com/developernaren/go-tests/add"
 )
 
-
-func main()  {
+func main() {
 
 	sum := add.Add(2, 3)
 

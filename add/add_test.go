@@ -1,19 +1,10 @@
 package add
 
 import (
-	"fmt"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
-func TestAdd(t *testing.T)  {
-
-	expected := 5
-	a := 2
-	b := 3
-
-	got := Add(a, b)
-
-	if got != expected {
-		panic(fmt.Sprintf("expected %d but got %d", expected, got))
-	}
+func TestAdd(t *testing.T) {
+	assert.Equal(t, 5, Add(2, 4))
 }
