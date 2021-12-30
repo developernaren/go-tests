@@ -1,13 +1,19 @@
 package main
 
 import (
-	"fmt"
-	"github.com/developernaren/go-tests/add"
+	"github.com/developernaren/go-tests/handler"
+	"github.com/labstack/echo/v4"
 )
 
 func main() {
 
-	sum := add.Add(2, 3)
+	e := echo.New()
 
-	fmt.Println(sum)
+	e.POST("/users", handler.Create)
+	e.GET("/users", handler.List)
+	e.GET("/users/:id", handler.Read)
+	e.PUT("/users/:id", handler.Update)
+	e.DELETE("users/:id", handler.Delete)
+
+	e.Logger.Fatal(e.Start(":1323"))
 }

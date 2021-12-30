@@ -1,0 +1,25 @@
+
+### Create User
+POST http://localhost:1323/users
+Content-Type: application/x-www-form-urlencoded
+
+name=Naren
+
+### List Users
+GET http://localhost:1323/users
+Accept: application/json
+
+### Read User
+GET http://localhost:1323/users/f21dd36d-e8e0-4ef5-884f-4c9346d24b66
+
+### Update User
+PUT http://localhost:1323/users/f21dd36d-e8e0-4ef5-884f-4c9346d24b66
+Content-Type: application/x-www-form-urlencoded
+
+name=Changed+Name
+
+###
+DELETE http://localhost:1323/users/841d7bea-f63d-4a2f-9e38-749970193ecc
+
+
+
