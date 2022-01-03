@@ -6,5 +6,5 @@ import (
 )
 
 func TestAdd(t *testing.T) {
-	assert.Equal(t, 5, Add(2, 4))
+	assert.Equal(t, 5, Add(2, 3))
 }
